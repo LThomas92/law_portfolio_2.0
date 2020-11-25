@@ -1,0 +1,78 @@
+.single-post-content-sidebar-container {
+
+}
+
+.single-post-content {
+    width: 100%;
+    p {
+        margin: 1.5rem 0;
+        line-height: 25px;
+        font-size: 1.2rem;
+        &:first-child {
+            margin: 0;
+        }
+    }
+    &__tags {
+        font-family: $quick-sand;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            color: $black;
+            border-bottom: 1px solid $black;
+            margin-right: 0.2rem;
+            &:first-child {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+.single-post-sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__single {
+        width: 23%;
+    }
+}
+
+.single-post-main-img {
+    margin-bottom: 3.5rem;
+    @media only screen and (max-width: 800px) {
+       margin-bottom: 1rem;
+        }
+   img {
+    width: 100vw;
+    position: relative;
+    left: calc(50% - 50vw);
+    object-fit: cover;
+    @media only screen and (max-width: 800px) {
+        position: initial;
+        left: unset;
+        object-fit: contain;
+        height: auto;
+        }
+   }
+}
+
+.single-post {
+    h1 {
+        font-family: $oswald;
+        text-align: center;
+        margin-bottom: 1.2rem;
+        font-size: 2.2rem;
+        @media only screen and (max-width: 800px) {
+            margin: 0 20px;
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+            }
+    }
+    h2, h3, h4, h5, h6 {
+        font-family: $oswald;
+        font-size: 1.5rem;
+        @media only screen and (max-width: 800px) {
+            font-size: 1.2rem;
+            }
+    }
+}

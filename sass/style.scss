@@ -1,0 +1,85 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+
+@import "taxonomy";
+@import "animations";
+@import "404";
+@import "front-page";
+@import "about-page";
+@import "contact-page";
+@import "work-page";
+@import "blog-page";
+@import "single-post";
+@import "single-project";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: $white;
+}
+
+main {
+ min-height: calc(100vh - 70px);
+}
+
+h1 {
+  font-family: $oswald;
+}
+
+p {
+    font-family: $quick-sand;
+    font-size: 1.4rem;
+    letter-spacing: 0.2px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  font-family: $quick-sand;
+  font-size: 1.2rem;
+}
+
+.container-margins {
+  margin: 0 80px;
+  @media only screen and (max-width: 800px) { 
+   margin: 0 20px;
+    }
+}
+
+.content-margins {
+  margin: 0 160px;
+  @media only screen and (max-width: 800px) { 
+    margin: 0 20px;
+    }
+}
+
+$bezier: cubic-bezier(0.64, 0.04, 0.35, 1);
+  .to-reveal {
+    opacity: 0;
+  }
+
+  .revealed {
+    transition: 0.6s $bezier;
+  }
+
+  .btn {
+    border: 2px solid $black;
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    border-radius: 3px;
+    display: block;
+    margin-top: 2rem;
+    color: $black;
+    font-weight: 400;
+    width: 60%;
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }

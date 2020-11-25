@@ -1,0 +1,40 @@
+footer {
+  height: 100px;
+  margin-top: 2.5rem;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-container {
+  height: 40px;
+  padding: 1.3rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0 , 0, 0.1);
+  @media only screen and (max-width: 800px) { 
+    flex-direction: column;
+     }
+  &__icons {
+    width: 100;
+    margin: 0 auto;
+  }
+}
+
+.sm-logo {
+  height: 2rem;
+}
+
+.menu-footer-menu-container {
+  margin-bottom: 1rem;
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  li a {
+    color: $black;
+  }
+}

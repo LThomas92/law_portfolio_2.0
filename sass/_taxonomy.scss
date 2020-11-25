@@ -1,0 +1,87 @@
+.taxonomy-container {
+    margin: 0 50px;
+    .archive-header span {
+        color: $gold;
+    }
+    .search-page-title span {
+        color: $gold;
+    }
+}
+
+.taxonomy-single {
+    display: flex;
+    -webkit-box-shadow: 5px 5px 14px -5px $black; 
+    box-shadow: 5px 5px 14px -5px $black;
+    border: 1px solid rbga($black, 0.5);
+    margin: 2rem 0;
+    position: relative;
+    @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        }
+    &__title {
+        font-family: $quick-sand;
+        font-size: 1.3rem;
+        color: $gold;
+        display: block;
+        padding-top: 0.5rem;
+    }
+    &__date {
+        font-family: $quick-sand;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: $black;
+        margin-top: 0.4rem;
+    }
+    &__cat {
+
+    }
+
+    &__excerpt {
+        font-size: 1.1rem;
+        line-height: 20px;
+        margin-top: 1rem;
+    }
+    &__excerpt-2 {
+        font-size: 1.1rem;
+        line-height: 20px;
+        margin-bottom: 2rem;
+    }
+    &__link {
+       font-size: 1rem;
+        color: $gold;
+        display: block;
+        text-align: right;
+        @media only screen and (max-width: 800px) {
+            margin-bottom: 0.7rem;
+        }
+    }
+    &__img {
+        width: 30%;
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+    }
+    &__text {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+            }
+    }
+}
+
+.cat-link {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+        color: $gold;
+    }
+}
